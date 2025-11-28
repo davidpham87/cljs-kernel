@@ -53,7 +53,8 @@
     },
     "dependencies": {
         "@jupyterlab/application": "^4.5.0",
-        "@jupyterlite/services": "^0.7.0"
+        "@jupyterlite/services": "^0.7.0",
+        "scittle": "^0.7.27"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.5.0",

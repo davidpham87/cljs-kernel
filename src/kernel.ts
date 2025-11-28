@@ -1,5 +1,6 @@
 // Copyright (c) JupyterLite Contributors
 // Distributed under the terms of the Modified BSD License.
+import * as scittle from 'scittle';
 
 import type { KernelMessage } from '@jupyterlab/services';
 
@@ -53,7 +54,7 @@ export class EchoKernel extends BaseKernel {
     this.publishExecuteResult({
       execution_count: this.executionCount,
       data: {
-        'text/plain': code
+        'text/plain': scittle.core.eval_string(code)
       },
       metadata: {}
     });
