@@ -1,4 +1,4 @@
-# jupyterlite-echo-kernel
+# cljs-kernel
 
 [![Github Actions Status](https://github.com/jupyterlite/echo-kernel/workflows/Build/badge.svg)](https://github.com/jupyterlite/echo-kernel/actions/workflows/build.yml)
 
