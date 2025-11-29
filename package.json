@@ -7,9 +7,9 @@
         "jupyterlab",
         "jupyterlab-extension"
     ],
-    "homepage": "https://github.com/jupyterlite/cljs-kernel",
+    "homepage": "https://github.com/davidpham87/cljs-kernel",
     "bugs": {
-        "url": "https://github.com/jupyterlite/cljs-kernel/issues"
+        "url": "https://github.com/davidpham87/cljs-kernel/issues"
     },
     "license": "BSD-3-Clause",
     "author": "JupyterLite Contributors",
@@ -23,7 +23,7 @@
     "style": "style/index.css",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jupyterlite/cljs-kernel.git"
+        "url": "https://github.com/davidpham87/cljs-kernel.git"
     },
     "scripts": {
         "build": "jlpm build:lib && jlpm build:labextension:dev",
