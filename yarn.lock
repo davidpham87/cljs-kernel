@@ -594,6 +594,7 @@ __metadata:
     npm-run-all2: ^7.0.1
     prettier: ^3.0.0
     rimraf: ^5.0.1
+    scittle: ^0.7.27
     source-map-loader: ^1.0.2
     style-loader: ^3.3.1
     stylelint: ^15.10.1
@@ -4055,6 +4056,13 @@ __metadata:
     ajv-formats: ^2.1.1
     ajv-keywords: ^5.1.0
   checksum: d798b341ffa1371f8471629e8861af3aa99e8e15b89da2c0db28c5a80a02ee8c6ffc7daefbe28a2b8c1bc8e3f3e02d028775145d7ab3d9d1a413a9651a835466
+  languageName: node
+  linkType: hard
+
+"scittle@npm:^0.7.27":
+  version: 0.7.28
+  resolution: "scittle@npm:0.7.28"
+  checksum: 2b4543b8ad22bef6bdd05335434dd1fcd010080f459fd3f0211d98b9c6c0a5159c96ca1f27d550d6ca6195b101cce188fc15620fd1e565397dd183336b56a85a
   languageName: node
   linkType: hard
 
