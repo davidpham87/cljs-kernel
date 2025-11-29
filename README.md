@@ -1,10 +1,8 @@
-# cljs-kernel
+# jupyterlite-cljs-kernel
 
-[![Github Actions Status](https://github.com/jupyterlite/echo-kernel/workflows/Build/badge.svg)](https://github.com/jupyterlite/echo-kernel/actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/jupyterlite/cljs-kernel/workflows/Build/badge.svg)](https://github.com/jupyterlite/cljs-kernel/actions/workflows/build.yml)
 
-An echo kernel for JupyterLite.
-
-![echo-kernel](https://user-images.githubusercontent.com/591645/135660177-13f909fb-b63b-4bc9-9bf3-e2b6c37ee015.gif)
+A ClojureScript kernel for JupyterLite.
 
 ## Requirements
 
@@ -15,7 +13,7 @@ An echo kernel for JupyterLite.
 To install the extension, execute:
 
 ```bash
-pip install jupyterlite-echo-kernel
+pip install jupyterlite-cljs-kernel
 ```
 
 Then build your JupyterLite site:
@@ -29,7 +27,7 @@ jupyter lite build
 To remove the extension, execute:
 
 ```bash
-pip uninstall jupyterlite-echo-kernel
+pip uninstall jupyterlite-cljs-kernel
 ```
 
 ## Contributing
@@ -44,7 +42,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the jupyterlite-echo-kernel directory
+# Change directory to the jupyterlite-cljs-kernel directory
 # Install package in development mode
 python -m pip install -e .
 
@@ -69,12 +67,12 @@ With the watch command running, every saved change will immediately be built loc
 ### Development uninstall
 
 ```bash
-pip uninstall jupyterlite-echo-kernel
+pip uninstall jupyterlite-cljs-kernel
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `@jupyterlite/echo-kernel` within that folder.
+folder is located. Then you can remove the symlink named `@jupyterlite/cljs-kernel` within that folder.
 
 ### Packaging the extension
 

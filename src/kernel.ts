@@ -7,34 +7,34 @@ import type { KernelMessage } from '@jupyterlab/services';
 import { BaseKernel } from '@jupyterlite/services';
 
 /**
- * A kernel that echos content back.
+ * A kernel that evaluates ClojureScript.
  */
-export class EchoKernel extends BaseKernel {
+export class CljsKernel extends BaseKernel {
   /**
    * Handle a kernel_info_request message
    */
   async kernelInfoRequest(): Promise<KernelMessage.IInfoReplyMsg['content']> {
     const content: KernelMessage.IInfoReply = {
-      implementation: 'Text',
+      implementation: 'ClojureScript',
       implementation_version: '0.1.0',
       language_info: {
         codemirror_mode: {
-          name: 'text/plain'
+          name: 'clojure'
         },
-        file_extension: '.txt',
-        mimetype: 'text/plain',
-        name: 'echo',
-        nbconvert_exporter: 'text',
-        pygments_lexer: 'text',
-        version: 'es2017'
+        file_extension: '.cljs',
+        mimetype: 'text/x-clojure',
+        name: 'clojurescript',
+        nbconvert_exporter: 'clojure',
+        pygments_lexer: 'clojure',
+        version: '1.0'
       },
       protocol_version: '5.3',
       status: 'ok',
-      banner: 'An echo kernel running in the browser',
+      banner: 'A ClojureScript kernel running in the browser',
       help_links: [
         {
-          text: 'Echo Kernel',
-          url: 'https://github.com/jupyterlite/echo-kernel'
+          text: 'ClojureScript Kernel',
+          url: 'https://github.com/jupyterlite/cljs-kernel'
         }
       ]
     };

@@ -10,21 +10,21 @@ import type { IKernel } from '@jupyterlite/services';
 
 import { IKernelSpecs } from '@jupyterlite/services';
 
-import { EchoKernel } from './kernel';
+import { CljsKernel } from './kernel';
 
 /**
- * A plugin to register the echo kernel.
+ * A plugin to register the ClojureScript kernel.
  */
 const kernel: JupyterFrontEndPlugin<void> = {
-  id: '@jupyterlite/echo-kernel:kernel',
+  id: '@jupyterlite/cljs-kernel:kernel',
   autoStart: true,
   requires: [IKernelSpecs],
   activate: (app: JupyterFrontEnd, kernelspecs: IKernelSpecs) => {
     kernelspecs.register({
       spec: {
-        name: 'echo',
-        display_name: 'Echo',
-        language: 'text',
+        name: 'cljs',
+        display_name: 'ClojureScript',
+        language: 'clojure',
         argv: [],
         resources: {
           'logo-32x32': '',
@@ -32,7 +32,7 @@ const kernel: JupyterFrontEndPlugin<void> = {
         }
       },
       create: async (options: IKernel.IOptions): Promise<IKernel> => {
-        return new EchoKernel(options);
+        return new CljsKernel(options);
       }
     });
   }
