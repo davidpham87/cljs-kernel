@@ -1,6 +1,6 @@
 // Copyright (c) JupyterLite Contributors
 // Distributed under the terms of the Modified BSD License.
-import * as scittle from 'scittle';
+import * as scittle from 'scittle/dist/scittle';
 
 import type { KernelMessage } from '@jupyterlab/services';
 
